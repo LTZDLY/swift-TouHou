@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EED03CD27799E7800AB821C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED03CC27799E7800AB821C /* AppDelegate.swift */; };
+		3EED03CF27799E7800AB821C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3EED03CE27799E7800AB821C /* GameScene.sks */; };
+		3EED03D127799E7800AB821C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3EED03D027799E7800AB821C /* Actions.sks */; };
+		3EED03D527799E7800AB821C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED03D427799E7800AB821C /* GameViewController.swift */; };
+		3EED03D827799E7800AB821C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EED03D627799E7800AB821C /* Main.storyboard */; };
+		3EED03DA27799E7C00AB821C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EED03D927799E7C00AB821C /* Assets.xcassets */; };
+		3EED03DD27799E7C00AB821C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EED03DB27799E7C00AB821C /* LaunchScreen.storyboard */; };
+		3EED03E727799E7D00AB821C /* TouHouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED03E627799E7D00AB821C /* TouHouTests.swift */; };
+		3EED03F127799E7D00AB821C /* TouHouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED03F027799E7D00AB821C /* TouHouUITests.swift */; };
+		3EED03F327799E7D00AB821C /* TouHouUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED03F227799E7D00AB821C /* TouHouUITestsLaunchTests.swift */; };
+		3EED040227799ED500AB821C /* audio in Resources */ = {isa = PBXBuildFile; fileRef = 3EED040127799ED500AB821C /* audio */; };
+		3EED040927799F5000AB821C /* images in Resources */ = {isa = PBXBuildFile; fileRef = 3EED040527799F4F00AB821C /* images */; };
+		3EED041227799F8700AB821C /* SingleBossScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED040D27799F8700AB821C /* SingleBossScene.swift */; };
+		3EED041327799F8700AB821C /* StageOneScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED040E27799F8700AB821C /* StageOneScene.swift */; };
+		3EED041427799F8700AB821C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED040F27799F8700AB821C /* GameScene.swift */; };
+		3EED041527799F8700AB821C /* TouHouScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED041027799F8700AB821C /* TouHouScene.swift */; };
+		3EED041627799F8700AB821C /* GameStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED041127799F8700AB821C /* GameStartScene.swift */; };
+		3EED041B27799F9700AB821C /* SingleBossScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3EED041727799F9600AB821C /* SingleBossScene.sks */; };
+		3EED041C27799F9700AB821C /* GameStartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3EED041827799F9700AB821C /* GameStartScene.sks */; };
+		3EED041D27799F9700AB821C /* TouHouScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3EED041927799F9700AB821C /* TouHouScene.sks */; };
+		3EED041E27799F9700AB821C /* StageOneScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3EED041A27799F9700AB821C /* StageOneScene.sks */; };
+		3EED042527799FB200AB821C /* SpellCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED041F27799FB200AB821C /* SpellCard.swift */; };
+		3EED042627799FB200AB821C /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED042027799FB200AB821C /* Bullet.swift */; };
+		3EED042727799FB200AB821C /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED042127799FB200AB821C /* Boss.swift */; };
+		3EED042827799FB200AB821C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED042227799FB200AB821C /* Player.swift */; };
+		3EED042927799FB200AB821C /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED042327799FB200AB821C /* Enemy.swift */; };
+		3EED042A27799FB200AB821C /* PlayerBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED042427799FB200AB821C /* PlayerBullet.swift */; };
+		3EED042E2779A00800AB821C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED042C2779A00800AB821C /* File.swift */; };
+		3EED042F2779A00800AB821C /* MeCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED042D2779A00800AB821C /* MeCustomButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EED03E327799E7D00AB821C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EED03C127799E7800AB821C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EED03C827799E7800AB821C;
+			remoteInfo = TouHou;
+		};
+		3EED03ED27799E7D00AB821C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EED03C127799E7800AB821C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EED03C827799E7800AB821C;
+			remoteInfo = TouHou;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3EED03C927799E7800AB821C /* TouHou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouHou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EED03CC27799E7800AB821C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EED03CE27799E7800AB821C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		3EED03D027799E7800AB821C /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		3EED03D427799E7800AB821C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3EED03D727799E7800AB821C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EED03D927799E7C00AB821C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EED03DC27799E7C00AB821C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EED03E227799E7D00AB821C /* TouHouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouHouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EED03E627799E7D00AB821C /* TouHouTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouHouTests.swift; sourceTree = "<group>"; };
+		3EED03EC27799E7D00AB821C /* TouHouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouHouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EED03F027799E7D00AB821C /* TouHouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouHouUITests.swift; sourceTree = "<group>"; };
+		3EED03F227799E7D00AB821C /* TouHouUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouHouUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3EED040127799ED500AB821C /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = audio; sourceTree = "<group>"; };
+		3EED040527799F4F00AB821C /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		3EED040D27799F8700AB821C /* SingleBossScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleBossScene.swift; sourceTree = "<group>"; };
+		3EED040E27799F8700AB821C /* StageOneScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageOneScene.swift; sourceTree = "<group>"; };
+		3EED040F27799F8700AB821C /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = "../../../iosgame/iosgame/New Group/GameScene.swift"; sourceTree = "<group>"; };
+		3EED041027799F8700AB821C /* TouHouScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouHouScene.swift; sourceTree = "<group>"; };
+		3EED041127799F8700AB821C /* GameStartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStartScene.swift; sourceTree = "<group>"; };
+		3EED041727799F9600AB821C /* SingleBossScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SingleBossScene.sks; sourceTree = "<group>"; };
+		3EED041827799F9700AB821C /* GameStartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameStartScene.sks; sourceTree = "<group>"; };
+		3EED041927799F9700AB821C /* TouHouScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TouHouScene.sks; sourceTree = "<group>"; };
+		3EED041A27799F9700AB821C /* StageOneScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageOneScene.sks; sourceTree = "<group>"; };
+		3EED041F27799FB200AB821C /* SpellCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellCard.swift; sourceTree = "<group>"; };
+		3EED042027799FB200AB821C /* Bullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
+		3EED042127799FB200AB821C /* Boss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boss.swift; sourceTree = "<group>"; };
+		3EED042227799FB200AB821C /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3EED042327799FB200AB821C /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		3EED042427799FB200AB821C /* PlayerBullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerBullet.swift; sourceTree = "<group>"; };
+		3EED042C2779A00800AB821C /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		3EED042D2779A00800AB821C /* MeCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeCustomButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EED03C627799E7800AB821C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EED03DF27799E7D00AB821C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EED03E927799E7D00AB821C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EED03C027799E7800AB821C = {
+			isa = PBXGroup;
+			children = (
+				3EED03CB27799E7800AB821C /* TouHou */,
+				3EED03E527799E7D00AB821C /* TouHouTests */,
+				3EED03EF27799E7D00AB821C /* TouHouUITests */,
+				3EED03CA27799E7800AB821C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3EED03CA27799E7800AB821C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EED03C927799E7800AB821C /* TouHou.app */,
+				3EED03E227799E7D00AB821C /* TouHouTests.xctest */,
+				3EED03EC27799E7D00AB821C /* TouHouUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EED03CB27799E7800AB821C /* TouHou */ = {
+			isa = PBXGroup;
+			children = (
+				3EED040527799F4F00AB821C /* images */,
+				3EED040127799ED500AB821C /* audio */,
+				3EED042B2779A00000AB821C /* File */,
+				3EED03CC27799E7800AB821C /* AppDelegate.swift */,
+				3EED03D427799E7800AB821C /* GameViewController.swift */,
+				3EED03FF27799E8A00AB821C /* SpriteKit Scene */,
+				3EED040027799E8C00AB821C /* Scene */,
+				3EED040C27799F6500AB821C /* Object */,
+				3EED03D627799E7800AB821C /* Main.storyboard */,
+				3EED03D927799E7C00AB821C /* Assets.xcassets */,
+				3EED03DB27799E7C00AB821C /* LaunchScreen.storyboard */,
+			);
+			path = TouHou;
+			sourceTree = "<group>";
+		};
+		3EED03E527799E7D00AB821C /* TouHouTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EED03E627799E7D00AB821C /* TouHouTests.swift */,
+			);
+			path = TouHouTests;
+			sourceTree = "<group>";
+		};
+		3EED03EF27799E7D00AB821C /* TouHouUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3EED03F027799E7D00AB821C /* TouHouUITests.swift */,
+				3EED03F227799E7D00AB821C /* TouHouUITestsLaunchTests.swift */,
+			);
+			path = TouHouUITests;
+			sourceTree = "<group>";
+		};
+		3EED03FF27799E8A00AB821C /* SpriteKit Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3EED03CE27799E7800AB821C /* GameScene.sks */,
+				3EED041827799F9700AB821C /* GameStartScene.sks */,
+				3EED041727799F9600AB821C /* SingleBossScene.sks */,
+				3EED041A27799F9700AB821C /* StageOneScene.sks */,
+				3EED041927799F9700AB821C /* TouHouScene.sks */,
+				3EED03D027799E7800AB821C /* Actions.sks */,
+			);
+			path = "SpriteKit Scene";
+			sourceTree = "<group>";
+		};
+		3EED040027799E8C00AB821C /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3EED040F27799F8700AB821C /* GameScene.swift */,
+				3EED041127799F8700AB821C /* GameStartScene.swift */,
+				3EED040D27799F8700AB821C /* SingleBossScene.swift */,
+				3EED040E27799F8700AB821C /* StageOneScene.swift */,
+				3EED041027799F8700AB821C /* TouHouScene.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		3EED040C27799F6500AB821C /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				3EED042127799FB200AB821C /* Boss.swift */,
+				3EED042027799FB200AB821C /* Bullet.swift */,
+				3EED042327799FB200AB821C /* Enemy.swift */,
+				3EED042227799FB200AB821C /* Player.swift */,
+				3EED042427799FB200AB821C /* PlayerBullet.swift */,
+				3EED041F27799FB200AB821C /* SpellCard.swift */,
+			);
+			name = Object;
+			path = Scene/Object;
+			sourceTree = "<group>";
+		};
+		3EED042B2779A00000AB821C /* File */ = {
+			isa = PBXGroup;
+			children = (
+				3EED042C2779A00800AB821C /* File.swift */,
+				3EED042D2779A00800AB821C /* MeCustomButton.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EED03C827799E7800AB821C /* TouHou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EED03F627799E7D00AB821C /* Build configuration list for PBXNativeTarget "TouHou" */;
+			buildPhases = (
+				3EED03C527799E7800AB821C /* Sources */,
+				3EED03C627799E7800AB821C /* Frameworks */,
+				3EED03C727799E7800AB821C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouHou;
+			productName = TouHou;
+			productReference = 3EED03C927799E7800AB821C /* TouHou.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3EED03E127799E7D00AB821C /* TouHouTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EED03F927799E7D00AB821C /* Build configuration list for PBXNativeTarget "TouHouTests" */;
+			buildPhases = (
+				3EED03DE27799E7D00AB821C /* Sources */,
+				3EED03DF27799E7D00AB821C /* Frameworks */,
+				3EED03E027799E7D00AB821C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EED03E427799E7D00AB821C /* PBXTargetDependency */,
+			);
+			name = TouHouTests;
+			productName = TouHouTests;
+			productReference = 3EED03E227799E7D00AB821C /* TouHouTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3EED03EB27799E7D00AB821C /* TouHouUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EED03FC27799E7D00AB821C /* Build configuration list for PBXNativeTarget "TouHouUITests" */;
+			buildPhases = (
+				3EED03E827799E7D00AB821C /* Sources */,
+				3EED03E927799E7D00AB821C /* Frameworks */,
+				3EED03EA27799E7D00AB821C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EED03EE27799E7D00AB821C /* PBXTargetDependency */,
+			);
+			name = TouHouUITests;
+			productName = TouHouUITests;
+			productReference = 3EED03EC27799E7D00AB821C /* TouHouUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EED03C127799E7800AB821C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					3EED03C827799E7800AB821C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3EED03E127799E7D00AB821C = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 3EED03C827799E7800AB821C;
+					};
+					3EED03EB27799E7D00AB821C = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 3EED03C827799E7800AB821C;
+					};
+				};
+			};
+			buildConfigurationList = 3EED03C427799E7800AB821C /* Build configuration list for PBXProject "TouHou" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EED03C027799E7800AB821C;
+			productRefGroup = 3EED03CA27799E7800AB821C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EED03C827799E7800AB821C /* TouHou */,
+				3EED03E127799E7D00AB821C /* TouHouTests */,
+				3EED03EB27799E7D00AB821C /* TouHouUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EED03C727799E7800AB821C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EED03D827799E7800AB821C /* Main.storyboard in Resources */,
+				3EED03CF27799E7800AB821C /* GameScene.sks in Resources */,
+				3EED03DA27799E7C00AB821C /* Assets.xcassets in Resources */,
+				3EED041B27799F9700AB821C /* SingleBossScene.sks in Resources */,
+				3EED041E27799F9700AB821C /* StageOneScene.sks in Resources */,
+				3EED041C27799F9700AB821C /* GameStartScene.sks in Resources */,
+				3EED040927799F5000AB821C /* images in Resources */,
+				3EED041D27799F9700AB821C /* TouHouScene.sks in Resources */,
+				3EED040227799ED500AB821C /* audio in Resources */,
+				3EED03DD27799E7C00AB821C /* LaunchScreen.storyboard in Resources */,
+				3EED03D127799E7800AB821C /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EED03E027799E7D00AB821C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EED03EA27799E7D00AB821C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EED03C527799E7800AB821C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EED041427799F8700AB821C /* GameScene.swift in Sources */,
+				3EED042F2779A00800AB821C /* MeCustomButton.swift in Sources */,
+				3EED042927799FB200AB821C /* Enemy.swift in Sources */,
+				3EED042527799FB200AB821C /* SpellCard.swift in Sources */,
+				3EED042A27799FB200AB821C /* PlayerBullet.swift in Sources */,
+				3EED03D527799E7800AB821C /* GameViewController.swift in Sources */,
+				3EED042827799FB200AB821C /* Player.swift in Sources */,
+				3EED041327799F8700AB821C /* StageOneScene.swift in Sources */,
+				3EED042727799FB200AB821C /* Boss.swift in Sources */,
+				3EED03CD27799E7800AB821C /* AppDelegate.swift in Sources */,
+				3EED042E2779A00800AB821C /* File.swift in Sources */,
+				3EED041627799F8700AB821C /* GameStartScene.swift in Sources */,
+				3EED042627799FB200AB821C /* Bullet.swift in Sources */,
+				3EED041527799F8700AB821C /* TouHouScene.swift in Sources */,
+				3EED041227799F8700AB821C /* SingleBossScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EED03DE27799E7D00AB821C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EED03E727799E7D00AB821C /* TouHouTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EED03E827799E7D00AB821C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EED03F327799E7D00AB821C /* TouHouUITestsLaunchTests.swift in Sources */,
+				3EED03F127799E7D00AB821C /* TouHouUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EED03E427799E7D00AB821C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EED03C827799E7800AB821C /* TouHou */;
+			targetProxy = 3EED03E327799E7D00AB821C /* PBXContainerItemProxy */;
+		};
+		3EED03EE27799E7D00AB821C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EED03C827799E7800AB821C /* TouHou */;
+			targetProxy = 3EED03ED27799E7D00AB821C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EED03D627799E7800AB821C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EED03D727799E7800AB821C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3EED03DB27799E7C00AB821C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EED03DC27799E7C00AB821C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EED03F427799E7D00AB821C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3EED03F527799E7D00AB821C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EED03F727799E7D00AB821C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lin.TouHou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EED03F827799E7D00AB821C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lin.TouHou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3EED03FA27799E7D00AB821C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lin.TouHouTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouHou.app/TouHou";
+			};
+			name = Debug;
+		};
+		3EED03FB27799E7D00AB821C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lin.TouHouTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouHou.app/TouHou";
+			};
+			name = Release;
+		};
+		3EED03FD27799E7D00AB821C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lin.TouHouUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TouHou;
+			};
+			name = Debug;
+		};
+		3EED03FE27799E7D00AB821C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lin.TouHouUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TouHou;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EED03C427799E7800AB821C /* Build configuration list for PBXProject "TouHou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EED03F427799E7D00AB821C /* Debug */,
+				3EED03F527799E7D00AB821C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EED03F627799E7D00AB821C /* Build configuration list for PBXNativeTarget "TouHou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EED03F727799E7D00AB821C /* Debug */,
+				3EED03F827799E7D00AB821C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EED03F927799E7D00AB821C /* Build configuration list for PBXNativeTarget "TouHouTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EED03FA27799E7D00AB821C /* Debug */,
+				3EED03FB27799E7D00AB821C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EED03FC27799E7D00AB821C /* Build configuration list for PBXNativeTarget "TouHouUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EED03FD27799E7D00AB821C /* Debug */,
+				3EED03FE27799E7D00AB821C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EED03C127799E7800AB821C /* Project object */;
+}
